@@ -20,9 +20,11 @@ public class TC001_ValidateHomePage extends BaseClass{
 		home.clickCura();
 		home.clickHome();
 		String title = home.getName();
-		Assert.assertEquals(title, "CURA Healthcare Service");
 		
 
 		System.out.println("TC001_ValidateHomePage executed successfully\n\n");
+		
+		Assert.assertEquals(title, "CURA Healthcare Service");
+
 	}
 }

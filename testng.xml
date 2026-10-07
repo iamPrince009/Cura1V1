@@ -5,8 +5,8 @@
     <classes>
       <class name="testBase.BaseClass"/>
       <class name="testCase.TC001_ValidateHomePage"/>
-      <class name="testCase.TC003_AppointTest"/>
       <class name="testCase.TC002_LoginTest"/>
+      <class name="testCase.TC003_AppointTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
