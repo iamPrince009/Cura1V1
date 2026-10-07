@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <!--class name="testCase.TC001_ValidateHomePage"/-->
+      <class name="testBase.BaseClass"/>
+      <class name="testCase.TC001_ValidateHomePage"/>
+      <class name="testCase.TC003_AppointTest"/>
       <class name="testCase.TC002_LoginTest"/>
     </classes>
   </test> <!-- Test -->

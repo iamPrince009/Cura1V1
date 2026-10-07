@@ -11,6 +11,9 @@ public class TC001_ValidateHomePage extends BaseClass{
 	@Test
 	public void verify_Homepage()
 	{
+
+		System.out.println("Executing TC001_ValidateHomePage\n\n");
+		
 		HomePage home = new HomePage(driver);
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());
@@ -18,5 +21,8 @@ public class TC001_ValidateHomePage extends BaseClass{
 		home.clickHome();
 		String title = home.getName();
 		Assert.assertEquals(title, "CURA Healthcare Service");
+		
+
+		System.out.println("TC001_ValidateHomePage executed successfully\n\n");
 	}
 }

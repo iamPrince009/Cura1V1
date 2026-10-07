@@ -1,25 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-06T18:07:15 IST" name="Suite" finished-at="2026-10-06T18:07:20 IST" duration-ms="4996">
+  <suite started-at="2026-10-07T13:22:35 IST" name="Master Suite" finished-at="2026-10-07T13:22:59 IST" duration-ms="24168">
     <groups>
     </groups>
-    <test started-at="2026-10-06T18:07:15 IST" name="Test" finished-at="2026-10-06T18:07:20 IST" duration-ms="4996">
-      <class name="testCase.TC002_LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC002_LoginTest@55b0dcab]" started-at="2026-10-06T18:07:15 IST" name="setup" finished-at="2026-10-06T18:07:19 IST" duration-ms="3519" status="PASS">
+    <test started-at="2026-10-07T13:22:35 IST" name="Test001" finished-at="2026-10-07T13:22:44 IST" duration-ms="8952">
+      <class name="testCase.TC001_ValidateHomePage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC001_ValidateHomePage@55b0dcab]" started-at="2026-10-07T13:22:35 IST" name="setup" finished-at="2026-10-07T13:22:38 IST" duration-ms="3603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:testCase.TC002_LoginTest@55b0dcab]" started-at="2026-10-06T18:07:19 IST" name="loginTest" finished-at="2026-10-06T18:07:20 IST" duration-ms="1270" status="PASS">
+        <test-method signature="verify_Homepage()[pri:0, instance:testCase.TC001_ValidateHomePage@55b0dcab]" started-at="2026-10-07T13:22:38 IST" name="verify_Homepage" finished-at="2026-10-07T13:22:43 IST" duration-ms="5121" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=154.0.8037.98)
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ffe402eaefd0b6ae0cc04deef26ecea, clickElement {id=f.ED11A4BED875DDD957C9624AAD0053EE.d.BBC9D96044CA84118D806FCEDCBDE2BD.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51283}, goog:processID: 2816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51283/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ffe402eaefd0b6ae0cc04deef26ecea)] -> xpath: //li[@class='sidebar-brand']/a[text()='CURA Healthcare']]
+Session ID: 2ffe402eaefd0b6ae0cc04deef26ecea]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=154.0.8037.98)
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ffe402eaefd0b6ae0cc04deef26ecea, clickElement {id=f.ED11A4BED875DDD957C9624AAD0053EE.d.BBC9D96044CA84118D806FCEDCBDE2BD.e.36}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51283}, goog:processID: 2816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51283/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2ffe402eaefd0b6ae0cc04deef26ecea)] -> xpath: //li[@class='sidebar-brand']/a[text()='CURA Healthcare']]
+Session ID: 2ffe402eaefd0b6ae0cc04deef26ecea
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at pageObjects.HomePage.clickCura(HomePage.java:52)
+at testCase.TC001_ValidateHomePage.verify_Homepage(TC001_ValidateHomePage.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Homepage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC001_ValidateHomePage@55b0dcab]" started-at="2026-10-07T13:22:43 IST" name="tearDown" finished-at="2026-10-07T13:22:44 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCase.TC001_ValidateHomePage -->
+    </test> <!-- Test001 -->
+    <test started-at="2026-10-07T13:22:44 IST" name="Test002" finished-at="2026-10-07T13:22:48 IST" duration-ms="4396">
+      <class name="testCase.TC002_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC002_LoginTest@4c309d4d]" started-at="2026-10-07T13:22:44 IST" name="setup" finished-at="2026-10-07T13:22:47 IST" duration-ms="2911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:0, instance:testCase.TC002_LoginTest@4c309d4d]" started-at="2026-10-07T13:22:47 IST" name="loginTest" finished-at="2026-10-07T13:22:48 IST" duration-ms="1275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC002_LoginTest@55b0dcab]" started-at="2026-10-06T18:07:20 IST" name="tearDown" finished-at="2026-10-06T18:07:20 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC002_LoginTest@4c309d4d]" started-at="2026-10-07T13:22:48 IST" name="tearDown" finished-at="2026-10-07T13:22:48 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.TC002_LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Test002 -->
+    <test started-at="2026-10-07T13:22:48 IST" name="Test003" finished-at="2026-10-07T13:22:59 IST" duration-ms="10772">
+      <class name="testCase.TC003_AppointTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCase.TC003_AppointTest@4e3958e7]" started-at="2026-10-07T13:22:48 IST" name="setup" finished-at="2026-10-07T13:22:51 IST" duration-ms="3013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAppoint()[pri:0, instance:testCase.TC003_AppointTest@4e3958e7]" started-at="2026-10-07T13:22:51 IST" name="testAppoint" finished-at="2026-10-07T13:22:59 IST" duration-ms="7558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAppoint -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.TC003_AppointTest@4e3958e7]" started-at="2026-10-07T13:22:59 IST" name="tearDown" finished-at="2026-10-07T13:22:59 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCase.TC003_AppointTest -->
+    </test> <!-- Test003 -->
+  </suite> <!-- Master Suite -->
 </testng-results>
